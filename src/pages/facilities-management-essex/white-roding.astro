@@ -1,0 +1,276 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+const town = "White Roding";
+
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero/Hero.astro";
+import WideHero from "../../components/Hero/Hero.astro";
+import ImageBlock from "../../components/ImageBlock.astro";
+import DefaulContentBlock from "../../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../../components/Content/ImageOnRight.astro"; 
+import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import GetaQuote from "../../components/GetaQuote.astro";
+
+import Button from "../../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../../components/Headings/SubTitle.astro";
+import LargeTitle from "../../components/Headings/LargeTitle.astro";
+import UspSection from "../../components/Usp.astro";
+import SmallSubTitle from "../../components/Headings/SmallSubTitle.astro";
+import heroBg from "../../assets/images/facilitybg1.png";
+import facilities1 from "../../assets/images/facilityimg1.png";
+import facilities2 from "../../assets/images/facilityimg2.png";
+import building1 from "../../assets/images/building1.png";
+
+import pat1 from "../../assets/images/patimg1.png";
+import appliances from "../../assets/images/appliances.png";
+import safety from "../../assets/images/safety.png";
+---
+
+<Layout title={`Facilities Management White Roding | AFM Services`} description={`AFM Services have 20 years experience in construction, property & facilities management. We provide expert Facilities Management in White Roding`}> 
+
+
+
+
+  <Hero
+  title="Facilities Management White Roding"  
+  sub="Commercial Property & Facilities Management Services"
+  linkText="Get a Free Quote"
+  href="https://www.afmservices.co.uk/copy-of-services"
+  image={heroBg}
+  
+  >
+  <div slot="heroContent"> 
+    <p class="my-10 lg:text-lg">  
+        We provide property & facilities management services in White Roding to keep buildings safe, secure and clean for all inhabitants. Whether we are working independently or alongside property managers, AFM can provide you with the complete service you require.
+    </p> 
+   
+  </div>  
+  </Hero>
+
+
+		
+  <div class="lg:pt-20 bg-black text-white">
+ 
+    <ImageOnRight
+      
+      title="Our Role on Your Premises in White Roding"
+      image={facilities1} 
+      imageAlt="Facilities Management"
+      imageHeading="Workplace and facilities management"
+      height={600} 
+      width={600}
+      href="https://www.afmservices.co.uk/copy-of-services"
+      linkText="Get in Touch Today"
+    >
+      <Fragment slot="content" >
+        <p class="my-4 text-white">
+            Here at AFM, we prioritise providing bespoke services to our clients. No job is too small or too large and we have experience completing tasks on our own as well as with third parties.      
+      </p>
+      <p class="my-4 text-white">
+        This is particularly important when it comes to property management, as we understand that this is a unique industry where responsibilities are shared between facility managers and property managers.
+     </p>
+          <p class="my-4 text-white">
+            Our role is to ensure that the tasks at hand are completed. Whether it’s cleaning, ensuring health and safety compliance or providing planned preventative maintenance. In addition to performing our own work, we can also delegate and oversee other projects on-site.
+        </p>
+   
+       
+   
+      </Fragment>
+    </ImageOnRight>
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <LargeTitle textAlign="left">How We Can Help</LargeTitle>
+
+        <p class="lg:text-lg text-white my-10">
+            With years of experience working across a range of industries, our dedicated FM team have the expertise to work on many different projects. Whether it’s a single building or multiple sites across the country, you can rely on AFM to provide the following services.
+        </p>
+
+        <dl class="my-20 grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold  text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                    </svg>
+                  
+                      
+                    
+                </div>
+                <span class="text-xl text-white">Repair and maintain essential building systems</span>
+              </dt>
+              
+            </div>
+
+            <div class="relative pl-16">
+                <dt class="text-base font-semibold  text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    
+                        
+                      
+                  </div>
+                  <span class="text-xl text-white">Perform fire safety checks</span>
+                </dt>
+                
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold  text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    
+                        
+                      
+                  </div>
+                  <span class="text-xl text-white">Ensure compliance with health and safety
+
+                  </span>
+                </dt>
+                
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold  text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    
+                        
+                      
+                  </div>
+                  <span class="text-xl text-white">Keep building equipment and infrastructure functional and efficient</span>
+                </dt>
+            
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold  text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    
+                        
+                      
+                  </div>
+                  <span class="text-xl text-white">Coordinate layouts and ensure maximum use of space
+
+                  </span>
+                </dt>
+                
+              </div>
+    
+  
+            
+          </dl>
+
+            
+          <p class="lg:text-lg text-white my-10">
+            With years of experience working across a range of industries, our dedicated FM team have the expertise to work on many different projects. Whether it’s a single building or multiple sites across the country, you can rely on AFM to provide the following services.
+        </p>
+    </div>
+  
+    <ImageOnLeft
+      
+    title="Workplace Efficiency with Advanced Facilities Management Technology" 
+    image={facilities2} 
+    imageAlt="Facilities Management"
+    imageHeading="20 years experience in the facility management industry"
+    height={500} 
+    width={500}
+   
+  >
+    <Fragment slot="content" >
+      <p class="my-4 text-white">
+        In today's fast-paced business environment, efficient workplace management is essential for driving productivity and maximizing operational effectiveness. 
+     </p>
+     <p class="my-4 text-white">
+        At AFM, we leverage cutting-edge facilities management technology to streamline the functions of our facilities management department and enhance the overall performance of your workplace.
+     </p>
+  
+      <p class="my-4 text-white">
+        Our facilities management company utilizes state-of-the-art software and tools designed to automate routine tasks, track maintenance schedules, and monitor facility usage in real-time. 
+     </p>
+     <p class="my-4 text-white">
+       By integrating advanced technology into our operations, we empower our facilities management team to proactively identify and address issues, optimize resource allocation, and ensure the smooth functioning of your workplace environment.
+     </p>
+      
+   
+ 
+  
+  
+    </Fragment>
+  </ImageOnLeft>
+  <p class="lg:text-lg text-white max-w-7xl mx-auto px-4 lg:px-6 mb-4"> From managing maintenance requests to analyzing occupancy data, our comprehensive facilities management technology enables us to deliver tailored solutions that align with your business objectives and enhance the efficiency of your workplace operations. Partner with AFM Services to harness the power of innovative facilities management technology and transform your workplace into a dynamic and productive environment.
+</p>
+  <p class="lg:text-lg text-white max-w-7xl mx-auto px-4 lg:px-6 pb-4 lg:pb-20">We guarantee that our clients in White Roding receive services that are not only effective but also fully compliant with the law. At AFM Services, safety isn't just a box to check; it's a fundamental principle that guides our actions and decisions every step of the way.
+</p>
+
+  </div>
+
+
+
+  <div class="pt-10 pb-10 bg-black">
+    <CallToAction
+      background={heroBg}  
+      title="Commercial Property & Facilities Management Services in White Roding"
+      ImageAlt="Facilities Management"
+      linkText="Get in Touch"
+      href="https://www.afmservices.co.uk/copy-of-services">
+      <div slot="ctaContent"> 
+        <p class="mt-6 mb-4 lg:text-lg">
+            At AFM Services, we're committed to helping you achieve your workplace goals. Whether it's improving efficiency, reducing costs, or enhancing employee satisfaction, our team is here to support you every step of the way.
+         </p>
+        <p class="mb-4 lg:text-lg">
+            Get in touch today and let's work together to unlock the full potential of your organization.
+      </p>
+      </div>
+    </CallToAction>
+  </div>
+  
+  <div class="bg-black">
+  
+    <ImageOnRight
+      
+      title="The Importance of Facilities Management"
+      image={building1} 
+      imageAlt="Facilities Management"
+      height={600} 
+      width={600}
+   
+    >
+      <Fragment slot="content" >
+        <p class="my-4 text-white">
+            Effective workplace and facilities management is a critical organizational function that encompasses both soft and hard facilities management aspects. 
+        </p>
+        <p class="my-4 text-white">
+            Soft facilities management involves the management of services that contribute to the overall comfort and well-being of occupants, such as cleaning, catering, and security. 
+
+        </p>
+        <p class="my-4 text-white">
+            On the other hand, hard facilities management focuses on the physical infrastructure and assets of an organization, including maintenance, repairs, and space planning. 
+        </p>
+        <p class="my-4 text-white">
+            At AFM, we recognize the importance of both soft and hard facilities management in ensuring the smooth operation of your organization.
+        </p>
+        <p class="lg:my-4 text-white">
+            Our dedicated facilities management team specializes in project management and organizational functions to optimize the performance of your workplace environment. By implementing strategic planning and utilizing advanced facilities management tools, we effectively coordinate and manage various aspects of facilities management to support your organization's goals and objectives. 
+        </p>
+    
+   
+      </Fragment>
+    </ImageOnRight>
+    <p class="lg:text-lg text-white max-w-7xl mx-auto px-4 lg:px-6"> From overseeing maintenance schedules to maximizing space utilization, our comprehensive approach to facilities management ensures that your organization operates at peak efficiency while maintaining a conducive and productive workplace environment.
+    </p>
+  </div>
+
+</Layout>  
+
