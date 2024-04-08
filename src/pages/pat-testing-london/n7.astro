@@ -1,0 +1,198 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+const town = "N7";
+
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero/Hero.astro";
+import WideHero from "../../components/Hero/Hero.astro";
+import ImageBlock from "../../components/ImageBlock.astro";
+import DefaulContentBlock from "../../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../../components/Content/ImageOnRight.astro"; 
+import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import GetaQuote from "../../components/GetaQuote.astro";
+
+import Button from "../../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../../components/Headings/SubTitle.astro";
+import LargeTitle from "../../components/Headings/LargeTitle.astro";
+import UspSection from "../../components/Usp.astro";
+import SmallSubTitle from "../../components/Headings/SmallSubTitle.astro";
+ 
+
+import heroBg from "../../assets/images/patbg1.webp";
+import extension3 from "../../assets/images/extension3.png";    
+import fence1 from "../../assets/images/fence1.png";
+import returf1 from "../../assets/images/returf2.png";
+import decking1 from "../../assets/images/decking1.png";
+import lawn1 from "../../assets/images/lawn2.png";
+import design1 from "../../assets/images/design1.png";
+import resinDrive2 from "../../assets/images/drive2.png";
+import resinPatio1 from "../../assets/images/patio1.png";
+import block from "../../assets/images/block1.png";
+import tarmac from "../../assets/images/tarmac1.png";
+import Patio6 from "../../assets/images/patio-img-6.png";
+import Landscape1 from "../../assets/images/landscape1.png";
+import grassBg from "../../assets/images/grassbg1.png";
+import resinImg1 from "../../assets/images/artificial1.pngresin-img-2.png";
+import resin from "../../assets/images/resin-close.png";
+import Patio2 from "../../assets/images/patio-img-2.png";
+import resinImg2 from "../../assets/images/resin-img-landscape.png";
+
+import extension9 from "../../assets/images/extension9.png";
+import extension7 from "../../assets/images/extension7.png";
+import clearance from "../../assets/images/clearance.png";
+
+
+import pat1 from "../../assets/images/patimg1.png";
+import appliances from "../../assets/images/appliances.png";
+import safety from "../../assets/images/safety.png";
+---
+
+<Layout title={`PAT Testing N7 | AFM Services`} description={`AFM Services have 20 years experience in construction, property & facilities management. We provide expert PAT Testing in N7`}> 
+
+
+
+
+  <Hero
+  title="PAT Testing N7"  
+  sub="Professional PAT Testing Solutions in N7"
+  linkText="Get a Free Quote"
+  href="https://www.afmservices.co.uk/copy-of-property-services"
+  image={heroBg}
+  
+  >
+  <div slot="heroContent"> 
+    <p class="my-10 lg:text-lg">  
+  Portable Appliance Testing, commonly known as PAT or PAT Inspection or PAT test, is a routine inspection carried out on “movable” electrical appliances to check that they are safe to use. Its purpose is to prevent future electrical accidents.
+    </p> 
+    <p class="my-10 lg:text-lg">  
+      With over two decades of experience in construction, property, and facilities management, we understand the critical importance of maintaining electrical safety in commercial and residential premises in N7. Our professional Portable Appliance Testing (PAT) services offer comprehensive evaluations to ensure that all portable appliances are safe, functional, and compliant with relevant regulations in N7.
+        </p> 
+  </div>  
+  </Hero>
+
+
+		
+  <div class="lg:pt-20 bg-black text-white">
+ 
+    <ImageOnRight
+      
+      title="Electrical Safety Assurance: PAT Testing"
+      image={pat1} 
+      imageAlt="PAT Testing"
+      height={600} 
+      width={600}
+      href="https://www.afmservices.co.uk/copy-of-property-services"
+      linkText="Get in Touch Today"
+    >
+      <Fragment slot="content" >
+        <p class="my-4 text-white">
+          With AFM Services, you can trust in our commitment to safety and reliability. Our PAT testing services are conducted efficiently and effectively, with minimal disruption to your daily operations.       
+      </p>
+      <p class="my-4 text-white">
+          With our expert technicians and meticulous attention to detail, we provide peace of mind to businesses in N7, knowing that their electrical equipment is thoroughly inspected and maintained to the highest standards.      </p>
+          <p class="my-4 text-white">
+              Whether you need routine testing or require an urgent inspection, our experienced team is here to help. Protect your property, employees, and customers from electrical hazards with AFM Services' trusted PAT testing solutions. Contact us today to schedule your inspection and ensure the safety of your premises in N7. 
+        </p>
+   
+       
+   
+      </Fragment>
+    </ImageOnRight>
+  
+    <ImageOnLeft
+      
+    title="Our Commitment to Safety"
+    image={safety} 
+    imageAlt="PAT testing"
+    height={580} 
+    width={600}
+  >
+    <Fragment slot="content" >
+      <p class="my-4 text-white">
+          At AFM Services, ensuring the safety of our clients' premises and personnel in N7 is at the core of everything we do. We recognize the profound importance of maintaining a secure environment, and it's a commitment we take seriously every day.
+      </p>
+  
+      <p class="my-4 text-white">
+         Our team is dedicated to upholding the highest standards of safety in all aspects of our services, including PAT testing, property management, and facility maintenance.
+      </p>
+      
+      <p class="mb-4 text-white">
+          Compliance with relevant safety regulations and standards is non-negotiable for us. We adhere strictly to all industry regulations and guidelines, ensuring that every aspect of our operations meets or exceeds safety requirements. 
+      </p>
+  
+      <p class="mb-4 text-white">
+          We guarantee that our clients in N7 receive services that are not only effective but also fully compliant with the law. At AFM Services, safety isn't just a box to check; it's a fundamental principle that guides our actions and decisions every step of the way.
+      </p>
+  
+  
+    </Fragment>
+  </ImageOnLeft>
+  
+  </div>
+
+
+
+  <div class="pt-10 pb-20 bg-black">
+    <CallToAction
+      background={heroBg}  
+      title="Professional PAT testing in N7"
+      ImageAlt="PAT testing"
+      linkText="Get in Touch"
+      href="https://www.afmservices.co.uk/copy-of-property-services">
+      <div slot="ctaContent"> 
+        <p class="mt-6 mb-4 lg:text-lg">
+          Protect your premises and personnel with AFM Services. Contact us now to schedule your safety assessment and experience peace of mind knowing your property is in expert hands.
+      </p>
+        <p class="mb-4 lg:text-lg">
+          Our team of experienced professionals is ready to provide you with top-notch safety solutions tailored to your specific needs. Whether you require PAT testing, property management, or facility maintenance, we have the expertise to ensure that your premises meet the highest safety standards. Don't wait until it's too late—take proactive steps to safeguard your property and personnel by contacting AFM Services today.
+      </p>
+      </div>
+    </CallToAction>
+  </div>
+  
+  <div class="bg-black">
+  
+    <ImageOnRight
+      
+      title="PAT Testing Prices in N7"
+      image={appliances} 
+      imageAlt="PAT Testing prices"
+      height={600} 
+      width={600}
+      href="https://www.afmservices.co.uk/copy-of-property-services"
+      linkText="Get in Touch Today"
+    >
+      <Fragment slot="content" >
+        <p class="my-4 text-white">
+          At AFM Services, we are committed to transparent and competitive pricing.    
+      </p>
+      <ul class="text-white my-4 list-disc">
+          <li class="my-2">1-40 items - £80.00 flat fee
+          </li>
+          <li class="my-2">41-120 items - £1.20 each
+          </li>
+          <li class="my-2">121 - 500 items - £1.10 each
+          </li>
+          <li class="my-2">501 - 1000 items - £1.00 each
+          </li>
+          <li class="my-2">1001 - 2000 items - £0.95 each
+          </li>
+          <li class="my-2">2001 - 3000 items - £0.92 each
+          <li class="my-2">3001+ items - £0.90 each
+          </li>
+          <li class="my-2 font-bold">Tenancy Testing = £65
+          </li>
+  
+      </ul>
+     
+   
+       
+   
+      </Fragment>
+    </ImageOnRight>
+  </div>
+
+</Layout>  
+
