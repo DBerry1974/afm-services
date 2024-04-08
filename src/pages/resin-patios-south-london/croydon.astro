@@ -1,0 +1,347 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+const town = "Croydon";
+
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero/Hero.astro";
+import WideHero from "../../components/Hero/Hero.astro";
+import ImageBlock from "../../components/ImageBlock.astro";
+import DefaulContentBlock from "../../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../../components/Content/ImageOnRight.astro"; 
+import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import GetaQuote from "../../components/GetaQuote.astro";
+
+import Button from "../../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../../components/Headings/SubTitle.astro";
+import LargeTitle from "../../components/Headings/LargeTitle.astro";
+import UspSection from "../../components/Usp.astro";
+import SmallSubTitle from "../../components/Headings/SmallSubTitle.astro";
+
+import Areas from "../../components/areas.astro";
+
+import heroBg from "../../assets/images/drive-large.png";
+import extension3 from "../../assets/images/extension3.png";
+import fence1 from "../../assets/images/fence1.png";
+import returf1 from "../../assets/images/returf2.png";
+import decking1 from "../../assets/images/decking1.png";
+import lawn1 from "../../assets/images/lawn2.png";
+import design1 from "../../assets/images/design1.png";
+import resinDrive2 from "../../assets/images/drive2.png";
+import resinPatio1 from "../../assets/images/patio1.png";
+import block from "../../assets/images/block1.png";
+import tarmac from "../../assets/images/tarmac1.png";
+import Patio6 from "../../assets/images/patio-img-6.png";
+import Landscape1 from "../../assets/images/landscape1.png";
+import grassBg from "../../assets/images/grassbg1.png";
+import resinImg1 from "../../assets/images/artificial1.pngresin-img-2.png";
+import resin from "../../assets/images/resin-close.png";
+import Patio2 from "../../assets/images/patio-img-2.png";
+import resinImg2 from "../../assets/images/resin-img-landscape.png";
+
+import extension9 from "../../assets/images/extension9.png";
+import extension7 from "../../assets/images/extension7.png";
+import clearance from "../../assets/images/clearance.png";
+---
+
+<Layout title={`Resin Patios Croydon | Bespoke Driveways and Landscaping`} description={`Stunning resin bound patios in Croydon. Extremely durable and easy to maintain. We provide quality surfacing solutions and landscaping services to transform your outdoor space.`}>
+
+
+
+
+<Hero
+title="Resin Patios Croydon"
+sub="The Ultimate Patio Solution in Croydon"
+linkText="Get a Quote Today"
+href="/contact"
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="mt-6 lg:text-2xl">
+    Designed to withstand the elements while maintaining their pristine appearance, our patios offer the perfect space for relaxation and entertainment.
+
+   
+  </p> 
+  <p class="mb-4 lg:text-2xl">
+    Say goodbye to cracked concrete and weathered wood, and say hello to a patio that will enhance the charm of your outdoor space.
+  </p> 
+
+
+  
+</div>  
+</Hero>
+
+<Areas />
+<div class="mx-auto max-w-7xl px-4 lg:px-8 mt-10 lg:mt-20 lg:-mb-20 overflow-hidden">
+    <LargeTitle>Resin Bound Patios Croydon</LargeTitle>
+
+    <p class="mt-6 lg:text-lg text-gray-700">Resin patios and driveways are becoming a poplular surfacing solution for homeowners in Croydon and the South East. </p>
+    <p class="mb-4 lg:text-lg text-gray-700">
+        As well as being extremely durable and easy to maintain - making them ideal for busy households - they can add value to your home and can improve the appearance of your outdoor space significantly.
+      </p>
+ 
+
+  </div>
+
+	<ImageOnRight
+    
+   
+    image={Patio6} 
+    imageAlt="Resin Bound Patios"
+    height={700} 
+    width={500}
+ 
+  >
+    <Fragment slot="content" >
+    
+      
+        <p class="mb-4">
+            Unlike traditional patios and driveways that can crack or fade over time, resin bound driveways and patios are made of a tough material with superior weatherproofing qualities.        
+      </p>
+      <p class="mb-4">
+        Aggregates are thoroughly mixed together prior to laying, ensuring that the surface has been completely coated with a protective layer of resin which will prevent anything from sticking or scraping it while also meeting <strong>Sustainable Urban Drainage Systems (SUDS) </strong>standards, which are designed to prevent standing water and and potential floods
+      </p>
+      <p class="mb-4">
+        Aggregates are thoroughly mixed together prior to laying, ensuring that the surface has been completely coated with a protective layer of resin which will prevent anything from sticking or scraping it while also meeting <strong>Sustainable Urban Drainage Systems (SUDS) </strong>standards, which are designed to prevent standing water and and potential floods.
+      </p>
+      <p class="mb-4">
+      As well as the practical benefits, resin patios look stunning too, making them the ultimate surfacing solution for any home.
+      </p>
+ 
+    </Fragment>
+  </ImageOnRight>
+  <div class="mx-auto max-w-7xl px-8 lg:mb-20 lg:-mt-12 overflow-hidden">
+    <p class="lg:text-lg text-gray-700">Resin patios and driveways are becoming a poplular surfacing solution for homeowners in Croydon and the South East. </p>
+    <p class="mb-4 lg:text-lg text-gray-700">
+        As well as being extremely durable and easy to maintain - making them ideal for busy households - they can add value to your home and can improve the appearance of your outdoor space significantly.
+      </p>
+      <p class="mb-4 lg:text-lg text-gray-700">
+        As well as being extremely durable and easy to maintain - making them ideal for busy households - they can add value to your home and can improve the appearance of your outdoor space significantly.
+      </p>
+      <p class="mb-4 lg:text-lg text-gray-700">
+      Bespoke Driveways and Landscaping specialise in creating stunning resin patios in Croydon. Our expert team works hard to provide every customer with quality service and ensure your patio will last for years to come.</p>
+
+      <p class="mb-4 lg:text-lg text-gray-700">If you are a homeowner in the Croydon area, a resin bonded surface is the perfect solution, and Bespoke Driveways and Landscaping install stunning resin-bound patios and driveways for homeowners throughout North London, South London, East London and Essex.
+
+                        </p>
+ 
+
+  </div>
+
+
+  <ImageBlock
+  background={resinImg2}  
+  title="Benefits of Resin Bound Surfaces"
+  ImageAlt="Benefits of Resin Bound Surfaces"
+  >
+  <div slot="ctaContent" class="text-left"> 
+    <p class="text-white text-lg text-center">Resin patios have many benefits over other materials such as asphalt or concrete.</p>
+    <div class="mx-auto mt-16 lg:max-w-7xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+          
+                
+            </div>
+            <span class="text-2xl text-white font-bold">Reduced Flood Risk</span>
+          </dt>
+          <dd class="mt-2 text-xl text-gray-200"> 
+            Resin surfaces are permeable so allow water to seep through the surface making it ideal for flood risk areas.</dd>
+        </div>
+        
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+          
+                
+            </div>
+            <span class="text-2xl text-white font-bold">Anti-slip Surface</span>
+          </dt>
+          <dd class="mt-2 text-xl text-gray-200"> 
+            Resin is also the ideal anti-slip surface which makes it safer to walk and drive on.</dd>
+        </div>
+
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+          
+                
+            </div>
+            <span class="text-2xl text-white font-bold">Resistant to Weed Growth</span>
+          </dt>
+          <dd class="mt-2 text-xl text-gray-200"> 
+            Despite being permeable, resin surfaces are also weed resistent so weeds cannot grow through resin surfaces.</dd>
+        </div>
+
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+          
+                
+            </div>
+            <span class="text-2xl text-white font-bold">UV Resistant</span>
+          </dt>
+          <dd class="mt-2 text-xl text-gray-200"> 
+            Resin is available in a variety of colours that will not fade when exposed to UV light. This makes resin an ideal material for outdoor applications.</dd>
+        </div>
+
+        <div class="relative pl-16">
+            <dt class="text-base font-semibold  text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+            
+                  
+              </div>
+              <span class="text-2xl text-white font-bold">Durable</span>
+            </dt>
+            <dd class="mt-2 text-xl text-gray-200"> 
+                Resin bound driveways are hard wearing and long lasting. A SUDS compliant resin drive will last for many years with little maintenance required.</dd>
+          </div>
+
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold  text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+            
+                  
+              </div>
+              <span class="text-2xl text-white font-bold">Easy to Clean</span>
+            </dt>
+            <dd class="mt-2 text-xl text-gray-200"> 
+                Resin patios are easy to keep clean and free of dirt and debris.</dd>
+          </div>
+
+          <div class="relative pl-16 lg:col-span-2">
+            <dt class="text-base font-semibold  text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                </svg>
+            
+                  
+              </div>
+              <span class="text-2xl text-white font-bold">Attractive</span>
+            </dt>
+            <dd class="mt-2 text-xl text-gray-200"> 
+                Resin bound surfacing can add value to your home and improve its appearance significantly, as well as coming in a range of colour options.</dd>
+          </div>
+        
+      </dl>
+    </div>
+ 
+  </div>
+</ImageBlock>
+ 
+
+<CallToAction
+background={heroBg}  
+title="Free Quote for Resin Patios in Croydon"
+ImageAlt="Resin patios"
+linkText="Get a Free Quote"
+href="/contact">
+<div slot="ctaContent"> 
+  <p class="mt-6 mb-4 lg:text-xl">
+    If you are a homeowner in Croydon, contact us today to request an appointment and we will supply you with a free no obligation quote for your Resin Patio project. We also supply resin driveways and pathways, as well as tarmac and block paving.
+</p>
+
+</div>
+</CallToAction>
+
+    <ImageOnRight
+    
+    title="How Resin Patios are Installed"
+    image={resin} 
+    imageAlt="Resin Bound Patios"
+    height={600} 
+    width={600}
+    href="/contact"
+    linkText="Get a FREE Site Survey"
+      >
+    <Fragment slot="content" >
+   
+      <p class="mt-4">
+        Resin patios are quickly becoming a popular choice for homeowners in Croydon.
+     </p>
+      <p class="mb-4">
+        Resin patios are made up of a resin and aggregate mix, which is poured onto a prepared surface. The resin and aggregate mix then dries to form a hard, durable surface that can be used for patios, driveways, and more.
+      </p>
+      <p class="mb-4">
+        One of the best things about resin patios is the fast installation time. In most cases, installation can be done in just one day. This means that you can enjoy your new driveway or patio sooner rather than later.
+      </p>
+      <p class="mb-4">
+        Additionally, resin bound patios are incredibly durable. They can withstand heavy traffic and will not crack or chip over time. This makes them a great choice for homeowners who want a patio or driveway that will last for years.
+      </p>
+      <p class="mb-4">
+        If you're interested in installing a resin patio in Croydon, contact Bespoke Driveways and Landscaping today. We would be happy to discuss your options and help you choose the perfect patio for your home.
+      </p>
+ 
+ 
+ 
+    </Fragment>
+  </ImageOnRight>
+
+  <ImageOnLeft
+    
+  title="How to Care for Your Resin Bonded Patio in Croydon"
+  image={Patio2} 
+  imageAlt="Resin Bound patios"
+  height={500} 
+  width={500}
+  
+    >
+  <Fragment slot="content" >
+ 
+    <p class="mt-4">
+        Once your resin driveway or patio is installed, it is important to take care of it properly to ensure that it lasts.
+         </p>
+    <p class="mb-4">
+        Here are a few tips on how to care for your resin patio:
+    </p>
+    <ul class="list-disc">
+        <li class="mb-4 font-bold">Keep the surface clean and free of dirt and debris. Regularly sweep or hoover the to prevent any build-up.</li>
+        <li class="mb-4 font-bold">If any stains or marks occur, clean them with a damp cloth immediately. Do not use any harsh chemicals or abrasive cleaning products as they may damage the surface of the resin.</li>
+        <li class="mb-4 font-bold">If the patio becomes wet, allow it to dry naturally. Do not try to dry it with a blowtorch or any other type of heat source as this may damage the resin.</li>
+        <li class="mb-4 font-bold">Protect the patio from sharp objects.
+        </li>
+    </ul>     
+
+  </Fragment>
+</ImageOnLeft>
+
+
+  <GetaQuote 
+  background={heroBg}
+  href="/contact"
+  linkText="Free Survey in Croydon"
+  > 
+
+  <div slot="quoteContent"> 
+    <p><span class="font-bold text-white text-xl">Bespoke Driveways and Landscaping offer a FREE home survey and no obligation quote service for homeowners in Croydon.</span> <br />
+        Our experienced team will visit your property to assess your specific requirements and discuss your vision for your resin patio. We'll provide expert advice tailored to your needs and offer a detailed quote with transparent pricing, so you can make an informed decision about your project. Take the first step towards transforming your patio today – schedule your free home survey with us and let's bring your vision to life.</p>
+
+  </GetaQuote>
+ 
+
+
+
+</Layout>  
+

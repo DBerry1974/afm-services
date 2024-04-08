@@ -1,0 +1,244 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
+import WideHero from "../components/Hero/Hero.astro";
+import ImageBlock from "../components/ImageBlock.astro";
+import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
+import CallToAction from "../components/CallToAction.astro";
+import GetaQuote from "../components/GetaQuote.astro";
+
+import Button from "../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../components/Headings/SubTitle.astro";
+import LargeTitle from "../components/Headings/LargeTitle.astro";
+import UspSection from "../components/Usp.astro";
+import SmallSubTitle from "../components/Headings/SmallSubTitle.astro";
+
+import ContactSection from "../components/ContactSection.astro";
+
+import heroBg from "../assets/images/drive-large.png";
+import extension3 from "../assets/images/extension3.png";
+import fence1 from "../assets/images/fence1.png";
+import returf1 from "../assets/images/returf2.png";
+import decking1 from "../assets/images/decking1.png";
+import lawn1 from "../assets/images/lawn2.png";
+import design1 from "../assets/images/design1.png";
+import resinDrive2 from "../assets/images/drive2.png";
+import resinPatio1 from "../assets/images/patio1.png";
+import block from "../assets/images/block1.png";
+import tarmac from "../assets/images/tarmac1.png";
+import Drive5 from "../assets/images/patio-img-6.png";
+import Landscape1 from "../assets/images/landscape1.png";
+import grassBg from "../assets/images/grassbg1.png";
+import resinImg1 from "../assets/images/artificial1.pngresin-img-2.png";
+import resin from "../assets/images/resin-close.png";
+import Areas from "../components/areas.astro";
+
+
+import resinImg2 from "../assets/images/resin-img-landscape.png";
+
+import extension9 from "../assets/images/extension9.png";
+import extension7 from "../assets/images/extension7.png";
+import clearance from "../assets/images/clearance.png";
+---
+
+<Layout title={`Resin Patios | Bespoke Driveways and Landscaping`} description={`Stunning resin patios. Extremely durable and easy to maintain. We provide quality surfacing solutions and landscaping services to transform your outdoor space.`}>
+
+
+
+
+<Hero
+title="Resin Patios"
+sub="The Ultimate Patio Solution"
+linkText="Get a Quote Today"
+href="/contact"
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+    <p class="mt-6 lg:text-2xl">
+        Designed to withstand the elements while maintaining their pristine appearance, our patios offer the perfect space for relaxation and entertainment. 
+      </p> 
+      <p class="mb-4 lg:text-2xl">
+        Say goodbye to cracked concrete and weathered wood, and say hello to a patio that will enhance the charm of your outdoor space. 
+      </p> 
+
+  
+</div>  
+</Hero>
+
+ <Areas />
+
+
+	<ImageOnRight
+    
+    title="Resin Bound Patios"
+    image={Drive5} 
+    imageAlt="Resin Bound Patios"
+    height={500} 
+    width={500}
+ 
+  >
+    <Fragment slot="content" >
+      <p class="my-4">
+        With unmatched durability and versatility, they serve as the perfect foundation for creating a beautiful outdoor retreat in your backyard.
+        
+     </p>
+     <p class="my-4">
+       
+        Resin bound patios boast exceptional durability, capable of withstanding the rigors of outdoor use without cracking or fading. Additionally, their permeable surface allows for efficient water drainage, reducing the risk of puddles and making them safe and slip-resistant even when wet.
+     </p>
+      <p class="mb-4">
+        With a wide range of colors and patterns to choose from, you can customize your resin patio to perfectly complement your home's aesthetic while adding value and charm to your outdoor space. 
+      </p>
+      <p class="mb-4">
+        Say goodbye to high-maintenance materials and hello to a resin patio that offers lasting beauty and enjoyment for years to come.
+      </p>
+ 
+    
+ 
+    </Fragment>
+  </ImageOnRight>
+
+  
+  <ImageBlock
+  background={resinImg2}  
+  title="Benefits of Resin Bound Surfaces"
+  ImageAlt="Benefits of Resin Bound Surfaces"
+  >
+  <div slot="ctaContent" class="text-left"> 
+    <div class="mx-auto mt-16 lg:max-w-7xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+          
+                
+            </div>
+            <span class="text-2xl text-white font-bold">Reduced Flood Risk</span>
+          </dt>
+          <dd class="mt-2 text-xl text-gray-200"> 
+            Resin surfaces are permeable so allow water to seep through the surface making it ideal for flood risk areas.</dd>
+        </div>
+        
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+          
+                
+            </div>
+            <span class="text-2xl text-white font-bold">Anti-slip Surface</span>
+          </dt>
+          <dd class="mt-2 text-xl text-gray-200"> 
+            Resin is also the ideal anti-slip surface which makes it safer to walk and drive on.</dd>
+        </div>
+
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+          
+                
+            </div>
+            <span class="text-2xl text-white font-bold">Resistant to Weed Growth</span>
+          </dt>
+          <dd class="mt-2 text-xl text-gray-200"> 
+            Despite being permeable, resin surfaces are also weed resistent so weeds cannot grow through resin surfaces.</dd>
+        </div>
+
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+          
+                
+            </div>
+            <span class="text-2xl text-white font-bold">UV Resistant</span>
+          </dt>
+          <dd class="mt-2 text-xl text-gray-200"> 
+            Resin is available in a variety of colours that will not fade when exposed to UV light. This makes resin an ideal material for outdoor applications.</dd>
+        </div>
+        
+      </dl>
+    </div>
+ 
+  </div>
+</ImageBlock>
+ 
+	
+
+
+  <div class="mx-auto max-w-7xl px-8 lg:mt-20  overflow-hidden">
+    <LargeTitle>Weatherproof & Durable Patios</LargeTitle>
+
+    <p class="my-6 lg:text-lg text-gray-700">
+
+        Resin bound patios are engineered to withstand the harshest of elements, ensuring longevity and performance that surpasses traditional patio materials. With a resilient surface that resists cracking, fading, and erosion, you can trust that your outdoor oasis will maintain its pristine appearance year after year. From intense sunlight to heavy rain and everything in between, our patios provide a reliable and low-maintenance solution for your outdoor living needs. Enjoy peace of mind knowing that your patio is built to last, allowing you to focus on making memories in your outdoor space without worrying about upkeep or deterioration.    </p>
+  </div>
+
+
+    <ImageOnRight
+    
+    title="Mixing and Application Process"
+    image={resin} 
+    imageAlt="Resin Bound patios"
+    height={600} 
+    width={600}
+ 
+  >
+    <Fragment slot="content" >
+      <SmallSubTitle 
+      textAlign="left"
+      color="gray-800">
+      Aggregates Mixing
+    </SmallSubTitle>
+      <p class="mt-4">
+        Before we lay a single stone, we meticulously mix the aggregates to ensure a seamless and uniform appearance across your driveway. Our precise blending technique ensures that each aggregate is evenly distributed, resulting in a surface that is both visually stunning and incredibly durable.
+     </p>
+      <p class="mb-4">
+        Our precise blending technique ensures that each aggregate is evenly distributed, resulting in a surface that is both visually stunning and incredibly durable.
+      </p>
+ 
+      <SmallSubTitle 
+      textAlign="left"
+      color="gray-800">
+      Protective Resin Coating
+    </SmallSubTitle>
+      <p class="mt-4">
+        Once the aggregates are in place, we apply a protective layer of resin that enhances the appearance of your driveway while providing long-lasting protection against the elements. This resin coating not only prevents sticking or scraping but also meets Sustainable Urban Drainage Systems (SUDS) standards, ensuring proper drainage and preventing standing water. With our meticulous attention to detail and commitment to quality craftsmanship, you can trust that your resin driveway will not only look beautiful but will also provide years of reliable performance.
+      </p>
+ 
+    </Fragment>
+  </ImageOnRight>
+
+
+  <GetaQuote 
+  background={heroBg}
+  href="https://s1nv1eyyibf.typeform.com/to/oiUMErhg"
+  linkText="Talk to an Expert"
+  >
+
+  <div slot="quoteContent"> 
+    <p>Bespoke Driveways and Landscaping offer a FREE home survey and no obligation quote service. Our experienced team will visit your property to assess your specific requirements and discuss your vision for your resin patio. We'll provide expert advice tailored to your needs and offer a detailed quote with transparent pricing, so you can make an informed decision about your project. Take the first step towards transforming your patio today – schedule your free home survey with us and let's bring your vision to life.</p>
+
+  </GetaQuote>
+ 
+
+
+
+</Layout>  
+

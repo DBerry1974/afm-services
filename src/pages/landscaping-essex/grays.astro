@@ -1,0 +1,216 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+const town = "Grays";
+
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero/Hero.astro";
+import WideHero from "../../components/Hero/Hero.astro";
+import ImageBlock from "../../components/ImageBlock.astro";
+import DefaulContentBlock from "../../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import Button from "../../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../../components/Headings/SubTitle.astro";
+import LargeTitle from "../../components/Headings/LargeTitle.astro";
+import Areas from "../../components/areas.astro";
+import ContactSection from "../../components/ContactSection.astro";
+import GetaQuote from "../../components/GetaQuote.astro";
+
+import heroBg from "../../assets/images/drive-large.png";
+import extension3 from "../../assets/images/extension3.png";
+import fence1 from "../../assets/images/fence1.png";
+import returf1 from "../../assets/images/returf2.png";
+import decking1 from "../../assets/images/deck1.png";
+import patioGarden from "../../assets/images/patio-garden1.png";
+import artificial from "../../assets/images/artificial2.png";
+
+import lawn1 from "../../assets/images/lawn2.png";
+import design1 from "../../assets/images/design1.png";
+import resinDrive2 from "../../assets/images/drive2.png";
+import resinPatio1 from "../../assets/images/patio1.png";
+import block from "../../assets/images/block1.png";
+import tarmac from "../../assets/images/tarmac1.png";
+import Drive5 from "../../assets/images/drive-img-5.png";
+import Landscape1 from "../../assets/images/landscape1.png";
+import grassBg from "../../assets/images/grassbg1.png";
+import returf from "../../assets/images/returf4.png";
+
+import extension9 from "../../assets/images/extension9.png";
+import extension7 from "../../assets/images/extension7.png"; 
+import clearance from "../../assets/images/clearance.png";
+---
+
+<Layout title={`Landscaping Grays | Resin bound driveways and patios and complete landscaping solutions in Grays`} description={`We provide quality surfacing solutions and landscaping services to transform your outdoor space in Grays.`}>
+
+
+
+
+<Hero
+title="Bespoke Landscaping Services Grays"
+sub="Transform Your Outdoor Space in Grays"
+linkText="Get a Quote Today"
+href="/contact"
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="mt-6 mb-4 lg:text-xl">
+    Transform your outdoor space into a breathtaking retreat with our expert landscaping services. Your outdoor area is an extension of your home, and we're dedicated to making it as beautiful and inviting as possible. Whether you're looking to enhance your home's curb appeal or create a functional outdoor living area, our comprehensive landscaping services encompass everything from initial consultation and design to installation and ongoing maintenance.
+  </p> 
+
+  
+</div>  
+</Hero>
+
+
+<Areas />
+
+		
+<div class="mt-20">
+
+  <LargeTitle
+  textAlign="center">
+  Professional Landscaping Services
+</LargeTitle>
+ 
+	<ImageOnRight
+    
+    title="Tailored Outdoor Solutions in Grays"
+    image={Landscape1} 
+    imageAlt="Professional Landscaping Services"
+    height={500} 
+    width={500}
+ 
+  >
+    <Fragment slot="content" >
+      <p class="my-4">
+        Elevate your outdoor living experience with our comprehensive range of expert landscaping services. At Bespoke Driveways and Landscaping, we specialize in creating stunning outdoor environments that seamlessly blend beauty and functionality. 
+      </p>
+      <p class="mb-4">
+        From garden design to hardscaping, softscaping, and outdoor lighting, our team of experienced professionals is dedicated to transforming your outdoor space into a captivating retreat that reflects your unique style and enhances the overall aesthetics of your property in Grays.
+      </p>
+ 
+      <p class="mb-4">
+        Whether you're looking to revitalize an existing garden, create a luxurious patio for entertaining, or add curb appeal, we have the expertise and creativity to bring your vision to life. Let us help you unlock the full potential of your outdoor space and enjoy the beauty of nature right outside your doorstep.      
+    </p>
+ 
+    </Fragment>
+  </ImageOnRight>
+
+
+
+</div>
+
+<div class="mx-auto max-w-7xl px-8 ">
+  <LargeTitle>Full Range of Landscaping Services in Grays</LargeTitle>
+
+</div>
+
+  <div class="mx-auto max-w-7xl px-8 overflow-hidden mb-20">
+    
+  
+  <div
+  class="mt-12 grid w-full lg:gap-10 lg:grid-cols-2"
+  >
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={returf}
+      class="w-full overflow-hidden rounded-lg"
+      alt="landscaping services"
+      width={600}
+      height={300}
+      format="webp" 
+    />
+    
+   <h3 class="text-green-800 text-xl lg:text-3xl font-bold py-4"> Returfing Services</h3>
+  <p class="lg:text-lg text-gray-700">
+    Discover our professional returfing solutions designed to rejuvenate your lawn with lush, healthy grass. Our team specializes in removing old, worn-out turf and replacing it with fresh, high-quality grass, transforming your outdoor space into a vibrant and inviting landscape. With meticulous attention to detail and expert techniques, we ensure that your new turf is installed seamlessly, providing you with a beautiful and resilient lawn to enjoy for years to come.
+  </p>
+  
+  </div> 
+
+  
+  
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={decking1}
+      class="w-full overflow-hidden rounded-lg"
+      alt="landscaping services"
+      width={600}
+      height={300}
+      format="webp"
+    />
+    
+   <h3 class="text-green-800 text-xl lg:text-3xl font-bold py-4">Decking Services</h3>
+  <p class="lg:text-lg text-gray-700">
+    Explore our decking installation services for a stylish and functional outdoor living space. Our team specializes in designing and installing high-quality decks tailored to your specific needs and preferences. Whether you envision a cozy gathering spot for family barbecues or a tranquil retreat for relaxation, we'll work with you to create the perfect deck design. With durable materials and expert craftsmanship, we'll transform your outdoor area into a welcoming extension of your home.
+  </p>
+ 
+  </div> 
+
+  
+  
+ 
+  
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={patioGarden}
+      class="w-full overflow-hidden rounded-lg"
+      alt="landscaping services"
+      width={600}
+      height={300}
+      format="webp"
+    />
+    
+   <h3 class="text-green-800 text-xl lg:text-3xl font-bold py-4">Patio & Garden Design</h3>
+  <p class="lg:text-lg text-gray-700">
+    Our team specializes in crafting expertly designed patios and gardens tailored to your preferences. We focus on creating outdoor spaces that are both functional and aesthetically pleasing. From initial planning to final implementation, we work closely with you to ensure that every aspect of your patio and garden design meets your needs and exceeds your expectations.
+  </p>
+  
+  </div> 
+
+  
+  
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={artificial}
+      class="w-full overflow-hidden rounded-lg"
+      alt="landscaping services"
+      width={600}
+      height={300}
+      format="webp"
+    />
+    
+   <h3 class="text-green-800 text-xl lg:text-3xl font-bold py-4">Artificial Lawn Installation
+   </h3>
+  <p class="lg:text-lg text-gray-700">
+     Whether you're tired of mowing, watering, and fertilizing or seeking a durable solution for high-traffic areas, our artificial lawn options offer the perfect solution.<br /> With meticulous attention to detail and professional installation techniques, we'll create a vibrant and long-lasting lawn that enhances your outdoor living experience.
+  </p>
+  
+  
+  </div> 
+
+ 
+
+ </div>
+
+ <p class="my-6 font-bold lg:text-2xl text-gray-700">
+  These are just a few of the services we provide. We are your one-stop-shop for Landscaping Services in Grays. If you have a garden or landscaping project you would like to get started, <a href="/contact" class="font-bold hover:text-gray-500 text-green-800"> GET IN TOUCH FOR A FREE QUOTE TODAY.</a>
+</p>
+  </div>
+  
+
+<GetaQuote 
+background={heroBg}
+href="/contact"
+linkText="Talk to an Expert in Grays"
+>
+
+<div slot="quoteContent"> 
+  <p>Bespoke Driveways and Landscaping offer a FREE home survey and no obligation quote service. Our experienced team will visit your property in Grays to assess your specific requirements and discuss your vision for your landscaping project . We'll provide expert advice tailored to your needs and offer a detailed quote with transparent pricing, so you can make an informed decision about your project. Take the first step towards transforming your driveway today – schedule your free home survey with us and let's bring your vision to life.</p>
+
+</GetaQuote>
+</Layout>  
+
