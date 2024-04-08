@@ -1,17 +1,25 @@
 ---
-import ico from "../../assets/images/ico.webp";
-import { Image } from "@astrojs/image/components";
-import Tat from "../../assets/images/tat-logo-150x150.jpg";
+import { Image } from 'astro:assets'
+import Afm from "../../assets/images/afm-img1.png";
 
 ---
 
-<footer class="bg-gray-600" aria-labelledby="footer-heading">
+<footer class="bg-black" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
 
-  <footer class="py-10 mt-32">
+  <footer class="py-20">
+
+    <Image
+    src={Afm}
+    width="300"
+    alt="AFM Services"
+    class="mx-auto"
+  />
+
   <p class="mt-8 text-base text-white text-center">
-    &copy; {new Date().getFullYear()} Molino Villas. All rights reserved.
+    &copy; {new Date().getFullYear()} AFM Services. All rights reserved.
   </p>
+
   
    
      
