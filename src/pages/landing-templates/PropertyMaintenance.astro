@@ -1,0 +1,172 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+const town = "{town}";
+
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero/Hero.astro";
+import WideHero from "../../components/Hero/Hero.astro";
+import ImageBlock from "../../components/ImageBlock.astro";
+import DefaulContentBlock from "../../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../../components/Content/ImageOnRight.astro"; 
+import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import GetaQuote from "../../components/GetaQuote.astro";
+
+import Button from "../../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../../components/Headings/SubTitle.astro";
+import LargeTitle from "../../components/Headings/LargeTitle.astro";
+import UspSection from "../../components/Usp.astro";
+import SmallSubTitle from "../../components/Headings/SmallSubTitle.astro";
+import heroBg from "../../assets/images/propertybg1.png";
+import fire1 from "../../assets/images/fireimg1.png";
+import electrical from "../../assets/images/electrical1.png";
+import carpentry from "../../assets/images/carpentry1.png";
+import maintenance1 from "../../assets/images/maintenance1.png";
+
+import pat1 from "../../assets/images/patimg1.png";
+import appliances from "../../assets/images/appliances.png";
+import safety from "../../assets/images/safety.png";
+---
+
+<Layout title={`Property Maintenance {town} | AFM Services`} description={`AFM Services have 20 years experience in construction, property & facilities management. We provide professional Property Maintenance services in {town}`}> 
+
+
+
+
+  <Hero
+  title="Property Maintenance {town}"  
+  sub="Professional Property Maintenance Services"
+  linkText="Get a Free Quote"
+  href="https://www.afmservices.co.uk/services-4"
+  image={heroBg}
+  
+  >
+  <div slot="heroContent"> 
+    <p class="my-10 lg:text-2xl">  
+        AFM Services have over 20 years experience in providing high quality property maintenance services to landlords, commercial businesses and residential properties in {town}, and throughout Essex, London and surrounding area’s.
+    </p> 
+   
+  </div>  
+  </Hero>
+
+
+		
+  <div class="lg:pt-20 bg-black text-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <LargeTitle textAlign="left">Comprehensive Property Maintenance Solutions in {town}</LargeTitle>
+
+        <p class="lg:text-lg text-white my-10">
+            At AFM Services, we offer a full suite of property maintenance services in {town} and across tailored to meet your needs. Our expertise spans refurbishments, electrical work, and carpentry, ensuring that your property remains in top condition at all times.
+        </p>
+    </div>
+ 
+    <ImageOnRight
+      
+      title="Refurbishments"
+      image={maintenance1} 
+      imageAlt="Refurbishments"
+      imageHeading="We use only qualified tradespeople and property maintenance workers" 
+      height={600} 
+      width={600}
+      href="https://www.afmservices.co.uk/services-4"
+      linkText="Get a Quote Today"
+    >
+      <Fragment slot="content" >
+        <p class="my-4 text-white">
+            Whether you need a minor refresh or a complete overhaul, our refurbishment services are designed to breathe new life into your property.
+        </p>
+      <p class="my-4 text-white">
+        From updating interior finishes to revamping exterior facades, we handle every aspect of the refurbishment process with precision and care. Our refurbishment team specializes in transforming outdated spaces into modern, functional areas that meet your specific needs and preferences.
+     </p>
+    <p class="my-4 text-white">
+        With attention to detail and a focus on quality craftsmanship, we ensure that your property is not only aesthetically pleasing but also fit for purpose. Trust AFM Services to elevate your property through our comprehensive refurbishment solutions.
+    </p>
+   
+       
+   
+      </Fragment>
+    </ImageOnRight>
+
+    <ImageOnLeft
+      
+    title="Carpentry" 
+    image={carpentry} 
+    imageAlt="Electrical Work"
+    imageHeading="Carpentry is just one example of property maintenance services AFM provide"
+    height={600} 
+    width={600}
+   
+  >
+    <Fragment slot="content" >
+      <p class="my-4 text-white">
+        At AFM Services, our carpentry services cover a wide range of common property maintenance needs. From repairing damaged woodwork to constructing custom features, our skilled carpenters have the expertise to handle various projects.
+     </p>
+     <p class="my-4 text-white">
+        Whether it's repairing wooden fences, building decks, or installing trim work, our team ensures that your property maintains its structural integrity and aesthetic appeal. Trust us to provide quality craftsmanship and reliable carpentry solutions to meet your property maintenance requirements.
+    </p>
+  
+      <p class="my-4 text-white">
+        In addition to repairs and installations, our carpentry services also include preventative maintenance to ensure the longevity of your property's wooden structures.
+      </p>
+     <p class="my-4 text-white">
+        We offer routine inspections and treatments to protect against rot, pests, and weather damage, helping you preserve the beauty and functionality of your property for years to come.
+    </p>  
+    <p class="my-4 text-white">
+        With AFM Services, you can count on our carpentry expertise to keep your property looking its best and standing strong.
+    </p> 
+  
+    </Fragment>
+  </ImageOnLeft>
+
+  <ImageOnRight
+      
+      title="Electrical Work"
+      image={electrical}  
+      imageAlt="Electrical Work"
+      imageHeading="Property services across London and Essex" 
+      height={600} 
+      width={600}
+      href="https://www.afmservices.co.uk/services-4"
+      linkText="Get a Quote Today"
+    >
+      <Fragment slot="content" >
+        <p class="my-4 text-white">
+            Electrical systems are the backbone of any property, and our team of skilled electricians is here to ensure that yours remains safe and functional.
+        </p>
+      <p class="my-4 text-white">
+        From installing new wiring to repairing faulty outlets, we provide comprehensive electrical services to keep your property powered up.
+      </p>
+    <p class="my-4 text-white">
+        Our electrical services extend beyond basic installations and repairs. We also specialise in energy-efficient lighting solutions, helping you reduce electricity consumption and lower utility bills.
+    </p>
+   
+    <p class="my-4 text-white">
+        Additionally, we offer electrical safety inspections to identify potential hazards and ensure compliance with regulations.
+    </p> 
+   
+      </Fragment>
+    </ImageOnRight>
+
+  <div class="pt-10 pb-10 bg-black">
+    <CallToAction
+      background={heroBg}  
+      title="Get a Free Quote Today in {town}"
+      ImageAlt="Get a Free Quote Today"
+      linkText="Get in Touch"
+      href="https://www.afmservices.co.uk/services-4">
+      <div slot="ctaContent"> 
+        <p class="mt-6 mb-4 lg:text-lg">
+            With AFM Services, you can expect personalised service, top-notch craftsmanship, and convenient property maintenance services with timely project completion.
+                  </p>
+        <p class="mb-4 lg:text-lg">
+            Discover how AFM Services can enhance your property's functionality and appeal. Contact us now to schedule your refurbishment, electrical work, or carpentry project. Let our expert team bring your vision to life and elevate your property to new heights of excellence.        </p>
+      </div>
+    </CallToAction>
+  </div>
+ 
+</div>
+</Layout>  
+
