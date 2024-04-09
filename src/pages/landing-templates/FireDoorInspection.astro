@@ -1,0 +1,222 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+const town = "{town}";
+
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero/Hero.astro";
+import WideHero from "../../components/Hero/Hero.astro";
+import ImageBlock from "../../components/ImageBlock.astro";
+import DefaulContentBlock from "../../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../../components/Content/ImageOnRight.astro"; 
+import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import GetaQuote from "../../components/GetaQuote.astro";
+
+import Button from "../../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../../components/Headings/SubTitle.astro";
+import LargeTitle from "../../components/Headings/LargeTitle.astro";
+import UspSection from "../../components/Usp.astro";
+import SmallSubTitle from "../../components/Headings/SmallSubTitle.astro";
+import heroBg from "../../assets/images/firebg1.png";
+import fire1 from "../../assets/images/fireimg1.png";
+import facilities2 from "../../assets/images/facilityimg2.png";
+import building1 from "../../assets/images/building1.png";
+
+import pat1 from "../../assets/images/patimg1.png";
+import appliances from "../../assets/images/appliances.png";
+import safety from "../../assets/images/safety.png";
+---
+
+<Layout title={`Fire Door Inspection {town} | AFM Services`} description={`AFM Services have 20 years experience in construction, property & facilities management. We provide professional Fire Door Inspection services in {town}`}> 
+
+
+
+
+  <Hero
+  title="Fire Door Inspection {town}"  
+  sub="Certified Fire Door Inspection"
+  linkText="Get a Free Quote"
+  href="https://www.afmservices.co.uk/copy-of-home"
+  image={heroBg}
+  
+  >
+  <div slot="heroContent"> 
+    <p class="my-10 lg:text-2xl">  
+        AFM Services undertake independent fire door inspections with our trained and competent inspectors in {town}.
+    </p> 
+    <p class="my-10 lg:text-2xl">  
+       
+        We do not manufacture or install Fire Doors so we provide a truly independent appraisal. 
+    </p> 
+   
+  </div>  
+  </Hero>
+
+
+		
+  <div class="lg:pt-20 bg-black text-white">
+ 
+    <ImageOnRight
+      
+      title="Fire Door Inspections {town} - Keeping you safe and compliant"
+      image={fire1} 
+      imageAlt="Fire Door Inspections"
+      imageHeading="Expert fire door inspections"
+      height={600} 
+      width={600}
+      href="https://www.afmservices.co.uk/copy-of-services"
+      linkText="Get a Quote Today"
+    >
+      <Fragment slot="content" >
+        <p class="my-4 text-white">
+            In order to ensure compliance it is important that fire doors are inspected and maintained correctly and regularly. Failure to do so can put lives and property at risk and can result in prosecution.
+        </p>
+      <p class="my-4 text-white">
+        A fire door is essential in splitting a building into ‘compartments’.  In the event of a fire a properly maintained fire door will contain smoke and fire to a specific area and allow for the safe evacuation of people from the building.
+      </p>
+    <p class="my-4 text-white">
+            Fire doors in buildings should be inspected on a 6-monthly basis as a minimum. Fire Doors where traffic is high are likely to be more susceptible to damage and should be checked more frequently than other doors in the building.
+     </p>
+     <p class="my-4 text-white">
+        Newly occupied buildings may require more frequent fire door inspections in the first year of use.      </p>
+   
+       
+   
+      </Fragment>
+    </ImageOnRight>
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <LargeTitle textAlign="left">Inspections & Site Visits</LargeTitle>
+
+        <p class="lg:text-lg text-white my-10">
+            Other services we provide.
+        </p>
+
+        <dl class="my-20 grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold  text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                    </svg>
+                  
+                      
+                    
+                </div>
+                <span class="text-xl text-white">Fire compartmentation surveys</span>
+              </dt>
+              
+            </div>
+
+            <div class="relative pl-16">
+                <dt class="text-base font-semibold  text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    
+                        
+                      
+                  </div>
+                  <span class="text-xl text-white">Health  & Safety inspection / assessment</span>
+                </dt>
+                
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold  text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    
+                        
+                      
+                  </div>
+                  <span class="text-xl text-white">Fire risk assessment
+
+                  </span>
+                </dt>
+                
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold  text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    
+                        
+                      
+                  </div>
+                  <span class="text-xl text-white">Site visits on behalf of property companies</span>
+                </dt>
+            
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold  text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    
+                        
+                      
+                  </div>
+                  <span class="text-xl text-white">Snagging surveys
+
+                  </span>
+                </dt>
+                
+              </div>
+    
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold  text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    
+                        
+                      
+                  </div>
+                  <span class="text-xl text-white">New build survey
+
+                  </span>
+                </dt>
+                
+              </div>
+            
+          </dl>
+  
+    
+
+  </div>
+
+
+
+  <div class="pt-10 pb-10 bg-black">
+    <CallToAction
+      background={heroBg}  
+      title="Ensuring Fire Safety in Your Premises in {town}"
+      ImageAlt="Fire door inspectors"
+      linkText="Get in Touch"
+      href="https://www.afmservices.co.uk/copy-of-home">
+      <div slot="ctaContent"> 
+        <p class="mt-6 mb-4 lg:text-lg">
+            Ready to prioritise fire safety in your premises? Contact AFM Services now to schedule your fire door inspection in {town} and ensure compliance with regulations. Don't wait until it's too late - take proactive steps to protect your building and its occupants from fire risks today.
+        </p>
+        <p class="mb-4 lg:text-lg">
+            Trust the experts at AFM Services to provide professional fire door inspections tailored to your needs. With our thorough assessments and expert guidance, you can rest assured that your fire doors are fit for purpose and ready to withstand potential fire hazards. Schedule your inspection now and prioritize safety in your premises.
+        </p>
+      </div>
+    </CallToAction>
+  </div>
+ 
+</div>
+</Layout>  
+
